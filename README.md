@@ -27,7 +27,8 @@ Users should be able to:
 
 # 🖥 Screenshot
 
-![](images/screenshot.jpg)
+![](images/screenshot-ratings.jpg)
+![](images/screenshot-thankyou.jpg)
 
 # 🔧 Technologies
 
