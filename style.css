@@ -1,0 +1,226 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* color palette */
+
+:root {
+    --color-orange: #fc7613;
+    --color-light-100: #ffffff;
+    --color-light-200: #78818a;
+    --color-dark-100: #262f38;
+    --color-dark-200: #212832;
+    --color-dark-300: #171e28;
+    --color-dark-400: #141519;
+    --color-dark-500: #151414;
+}
+
+/* default reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-dark-400);
+    overflow: hidden;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* main container */
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    max-width: 26rem;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 30px;
+    background: linear-gradient(180deg, var(--color-dark-200), var(--color-dark-300));
+    box-shadow: 0 0.5rem 1.5rem var(--color-dark-500);
+    overflow: hidden;
+}
+
+/* rating container */
+
+.rating-container {
+    display: inline;
+    width: 100%;
+}
+
+.fas {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-orange);
+    border-radius: 50px;
+    background: var(--color-dark-100);
+}
+
+.text-container {
+    margin-top: 0.5rem;
+}
+
+#r-title,
+#t-title {
+    font-size: 28px;
+    color: var(--color-light-100);
+}
+
+#r-description,
+#t-description {
+    font-weight: 400;
+    color: var(--color-light-200);
+}
+
+/* ratings buttons */
+
+.ratings {
+    width: 100%;
+    margin-top: 1.3rem;
+    margin-left: 0.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin-right: 1.3rem;
+    font-size: 14px;
+    text-align: center;
+    line-height: 42px;
+    color: var(--color-light-200);
+    border: none;
+    border-radius: 50px;
+    background: var(--color-dark-100);
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--color-light-100);
+    background: var(--color-orange);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:focus {
+    color: var(--color-light-100);
+    background: var(--color-light-200);
+}
+
+/* submit button */
+
+#submit {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-light-100);
+    border: none;
+    border-radius: 25px;
+    background: var(--color-orange);
+    transition: 0.2s ease-in-out;
+}
+
+#submit:hover {
+    color: var(--color-orange);
+    background: var(--color-light-100);
+    cursor: pointer;
+}
+
+/* thank you container */
+
+.thankyou-container {
+    width: 100%;
+    margin-top: 1.3rem;
+    display: inline;
+    text-align: center;
+}
+
+/* result container */
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    margin: 1.3rem 0;
+}
+
+#rs-description {
+    width: 60%;
+    padding: 0.3rem 0;
+    display: inline-block;
+    line-height: 25px;
+    color: var(--color-orange);
+    border-radius: 25px;
+    background: var(--color-dark-100);
+}
+
+#t-description {
+    margin-top: 1rem;
+}
+
+/* hidden */
+
+.hidden {
+    display: none;
+}
+
+/* media query */
+@media (max-width: 424px) {
+    .card-container {
+        max-width: 22rem;
+    }
+
+    .ratings {
+        margin-left: 0.3rem;
+    }
+
+    .btn {
+        width: 45px;
+        height: 45px;
+        margin-right: 0.8rem;
+        line-height: 36px;
+    }
+
+    #rs-description {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .card-container {
+        max-width: 20rem;
+    }
+
+    .ratings {
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.8rem;
+        line-height: 32px;
+    }
+}

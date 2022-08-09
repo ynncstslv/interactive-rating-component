@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- // font awesome icons ===== start // -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- // font awesome icons ===== end // -->
+        <!-- // bootstrap css ===== start // -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- // bootstrap css ===== end // -->
+        <!-- // master css ===== start // -->
+        <link rel="stylesheet" href="style.css">
+        <!-- // master css ===== end // -->
+        <!-- // favicon ===== start // -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <!-- // favicon ===== end // -->
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+        <!-- // main container ===== start -->
+        <div class="container-fluid">
+            <!-- // card container ===== start -->
+            <div class="card-container">
+                <!-- // rating container ===== start -->
+                <div class="rating-container">
+                    <i class="fas fa-star"></i>
+                    <div class="text-container">
+                        <h1 id="r-title">How did we do?</h1>
+                        <p id="r-description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                        <button class="btn">5</button>
+                    </div>
+                    <button id="submit">Submit</button>
+                </div>
+                <!-- // rating container ===== end -->
+                <!-- // thank you container ===== start -->
+                <div class="thankyou-container hidden">
+                    <img class="image-fluid" src="images/illustration-thank-you.svg" alt="thankYou">
+                    <div class="result-container">
+                        <p id="rs-description">You selected <span id="rate">0</span> out of 5</p>
+                    </div>
+                    <div class="text-container">
+                        <h1 id="t-title">Thank you!</h1>
+                        <p id="t-description">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+                    </div>
+                </div>
+                <!-- // thank you container ===== end -->
+            </div>
+            <!-- // card container ===== end -->
+        </div>
+        <!-- // main container ===== end -->
+        <!-- // bootstrap js ===== start // -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- // bootstrap js ===== end // -->
+        <!-- // master js ===== start // -->
+        <script src="script.js"></script>
+        <!-- // master js ===== end // -->
+    </body>
+</html>
